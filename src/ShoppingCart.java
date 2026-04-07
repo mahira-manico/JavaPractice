@@ -14,22 +14,22 @@ public class ShoppingCart {
         System.out.println("Check on the menu and tell us what you would like!");
         System.out.println("\n     ---Menu---\n|Box sushi miam: 20.2$| \n|Box maki sushi: 24$|\n|Box full nigiri: 37.20$|\n|Single sushi: 2.10$|");
 
-        {System.out.println("You made your choice? tell us your choice! only one possible! ");
+        {System.out.println("\nYou made your choice? tell us your choice! only one possible! ");
         items=scanner.nextLine();
 
-        if(items.equals("Box sushi miam")){
+        if(items.equalsIgnoreCase("Box sushi miam")){
             items="Box sushi miam";
             price=20.2;
 
-        } else if (items.equals("Box maki sushi")) {
+        } else if (items.equalsIgnoreCase("Box maki sushi")) {
             items="Box maki sushi";
             price=24.0;
 
-        } else if (items.equals("Box full nigiri")) {
+        } else if (items.equalsIgnoreCase("Box full nigiri")) {
             items="Box full nigiri";
             price=37.20;
 
-        }else if (items.equals("Single sushi")) {
+        }else if (items.equalsIgnoreCase("Single sushi")) {
             items = "Single sushi";
             price = 2.10;
         }
